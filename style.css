@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 1.6rem;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: Mulish;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 3.4rem;
+    padding: 1.2rem 2.8rem;
+    width: 100%;
+
+    background: #065E7C;
+}
+
+nav input {
+    width: 100%;
+    max-width: 105.3rem;
+    border: 0;
+    border-radius: 0.4rem;
+    padding: 1.2rem 1.4rem;
+
+    background: #387E96;
+
+    color: #FFF
+}
+
+nav input::placeholder {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 100%;
+
+    font-family: Mulish;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 4.4rem;
+
+    width: 100%;
+}
+
+nav #profile {
+    border-radius: 50%;
+}
+
+main #cat {
+    width: 100%;
+    max-width: 80.3rem;
+}
+
+
+.text {
+    padding: 3.1rem 2.2rem 0;
+}
+
+
+
+.text h1, aside h1 {
+    color: #202024;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.text .vote {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+
+    padding: .8rem 0 3.1rem;
+}
+
+.text p, aside p {
+    color: #121214;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+
+
+
+aside {
+    padding: 0 2.2rem 3.9rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    max-width: 80.3rem;
+}
+
+aside h2 {
+    color:#202024;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+aside p {
+    color: #121214;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.grids {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+
+    align-items: center;
+}
+
+.grid-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1.6rem;
+    background:#387E96;
+
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+@media (min-width: 803px) {
+
+    nav {
+        justify-content: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: center;
+        width: 121.95rem;
+        gap: 3.4rem;
+
+        margin: 0 auto;
+
+        padding: 4.4rem 0rem;
+    }
+
+    section {
+        max-width: 80.3rem;
+    }
+
+    aside {
+        padding: 0;
+    }
+
+    aside p {
+        width: 21.5rem;
+    }
+
+    .text {
+        padding: 0;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        gap: 33.6rem;
+    }
+}
